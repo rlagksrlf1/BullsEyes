@@ -24,22 +24,27 @@
                                     <view contentMode="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="mS4-TV-jP7">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="167"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="100" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yC2-V1-SlS">
-                                                <rect key="frame" x="173.5" y="95" width="28.5" height="20.5"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yC2-V1-SlS">
+                                                <rect key="frame" x="173.5" y="73" width="28.5" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Put the Bull's Eye as close you can to :" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D0i-z3-t3S">
-                                                <rect key="frame" x="41.5" y="73" width="292" height="20.5"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Put the Bull's Eye as close you can to :" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D0i-z3-t3S">
+                                                <rect key="frame" x="41.5" y="51" width="292" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="yC2-V1-SlS" firstAttribute="top" secondItem="D0i-z3-t3S" secondAttribute="bottom" constant="1.5" id="5eN-E8-lDJ"/>
+                                            <constraint firstItem="yC2-V1-SlS" firstAttribute="leading" secondItem="mS4-TV-jP7" secondAttribute="leading" constant="173.5" id="DWO-O9-jko"/>
+                                            <constraint firstItem="D0i-z3-t3S" firstAttribute="centerX" secondItem="mS4-TV-jP7" secondAttribute="centerX" id="Nz7-FL-Krv"/>
+                                            <constraint firstItem="yC2-V1-SlS" firstAttribute="centerY" secondItem="mS4-TV-jP7" secondAttribute="centerY" id="YPE-a0-J0q"/>
+                                            <constraint firstAttribute="trailing" secondItem="yC2-V1-SlS" secondAttribute="trailing" constant="173" id="bN8-1N-lRo"/>
+                                        </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mLf-hI-5x4">
                                         <rect key="frame" x="0.0" y="167" width="375" height="166.5"/>
@@ -152,7 +157,7 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Round" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QSh-lO-w02">
-                                                                <rect key="frame" x="22" y="49" width="49.5" height="20.5"/>
+                                                                <rect key="frame" x="22" y="51" width="49.5" height="20.5"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
@@ -160,12 +165,11 @@
                                                         </subviews>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
-                                                            <constraint firstItem="UDa-gZ-cjn" firstAttribute="leading" secondItem="A9Q-hd-cFf" secondAttribute="leading" constant="31" id="3bW-Qs-0ox"/>
-                                                            <constraint firstItem="UDa-gZ-cjn" firstAttribute="top" secondItem="QSh-lO-w02" secondAttribute="bottom" constant="3.5" id="9QL-5Q-B2Q"/>
-                                                            <constraint firstItem="UDa-gZ-cjn" firstAttribute="centerY" secondItem="A9Q-hd-cFf" secondAttribute="centerY" id="I9o-sG-BGm"/>
-                                                            <constraint firstItem="QSh-lO-w02" firstAttribute="centerX" secondItem="A9Q-hd-cFf" secondAttribute="centerX" id="Pch-Uv-C9Q"/>
-                                                            <constraint firstItem="QSh-lO-w02" firstAttribute="top" secondItem="A9Q-hd-cFf" secondAttribute="top" constant="49" id="WfS-h8-EH4"/>
-                                                            <constraint firstAttribute="trailing" secondItem="UDa-gZ-cjn" secondAttribute="trailing" constant="31.5" id="mYv-DH-Wt7"/>
+                                                            <constraint firstAttribute="trailing" secondItem="UDa-gZ-cjn" secondAttribute="trailing" constant="31.5" id="JRR-WH-mar"/>
+                                                            <constraint firstItem="UDa-gZ-cjn" firstAttribute="centerY" secondItem="A9Q-hd-cFf" secondAttribute="centerY" id="LFv-ZY-zg8"/>
+                                                            <constraint firstItem="QSh-lO-w02" firstAttribute="centerX" secondItem="A9Q-hd-cFf" secondAttribute="centerX" id="Lna-Dn-mEt"/>
+                                                            <constraint firstItem="UDa-gZ-cjn" firstAttribute="top" secondItem="QSh-lO-w02" secondAttribute="bottom" constant="1.5" id="f0s-AE-3JU"/>
+                                                            <constraint firstItem="UDa-gZ-cjn" firstAttribute="leading" secondItem="A9Q-hd-cFf" secondAttribute="leading" constant="31" id="ydS-7b-L78"/>
                                                         </constraints>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XrW-xa-GuF">
