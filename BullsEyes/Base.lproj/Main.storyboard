@@ -190,7 +190,7 @@
                                                         <rect key="frame" x="281.5" y="0.0" width="93.5" height="166.5"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xKM-GW-D2U">
-                                                                <rect key="frame" x="32" y="68" width="30" height="30"/>
+                                                                <rect key="frame" x="31.5" y="68" width="30" height="30"/>
                                                                 <state key="normal" title="i"/>
                                                             </button>
                                                         </subviews>
@@ -234,6 +234,10 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="roundLabel" destination="UDa-gZ-cjn" id="nHh-KO-b43"/>
+                        <outlet property="scoreLabel" destination="WFg-eL-h1Q" id="kty-6q-gmg"/>
+                        <outlet property="slider" destination="Co4-j5-6my" id="ub7-Cm-yCk"/>
+                        <outlet property="targetLabel" destination="yC2-V1-SlS" id="cbc-mb-f3n"/>
                         <outlet property="view" destination="Co4-j5-6my" id="iYF-xV-FhA"/>
                     </connections>
                 </viewController>
