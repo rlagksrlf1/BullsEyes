@@ -266,10 +266,18 @@
                                     <action selector="close:" destination="56a-8D-vGc" eventType="touchUpInside" id="wKz-fy-bou"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="EnE-fH-lyJ">
-                                <rect key="frame" x="38" y="67" width="298" height="386"/>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AAI-wb-dKR">
+                                <rect key="frame" x="38" y="76" width="298" height="377"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="EnE-fH-lyJ">
+                                <rect key="frame" x="38" y="71" width="298" height="386"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -278,13 +286,20 @@
                         <constraints>
                             <constraint firstItem="pkx-cS-nxk" firstAttribute="trailing" secondItem="EnE-fH-lyJ" secondAttribute="trailing" constant="39" id="3h0-bj-gVO"/>
                             <constraint firstItem="REm-7X-mdn" firstAttribute="top" secondItem="EnE-fH-lyJ" secondAttribute="bottom" constant="27" id="5Rh-pd-z9v"/>
+                            <constraint firstItem="AAI-wb-dKR" firstAttribute="leading" secondItem="pkx-cS-nxk" secondAttribute="leading" constant="38" id="8HJ-Qm-Y7V"/>
                             <constraint firstItem="REm-7X-mdn" firstAttribute="centerX" secondItem="zdC-dU-tNj" secondAttribute="centerX" id="Q3D-va-z5r"/>
                             <constraint firstItem="EnE-fH-lyJ" firstAttribute="leading" secondItem="pkx-cS-nxk" secondAttribute="leading" constant="38" id="YAz-fu-7gU"/>
+                            <constraint firstItem="REm-7X-mdn" firstAttribute="top" secondItem="AAI-wb-dKR" secondAttribute="bottom" constant="27" id="aDB-68-Bes"/>
+                            <constraint firstItem="pkx-cS-nxk" firstAttribute="trailing" secondItem="AAI-wb-dKR" secondAttribute="trailing" constant="39" id="cAd-EX-VYi"/>
+                            <constraint firstItem="AAI-wb-dKR" firstAttribute="top" secondItem="pkx-cS-nxk" secondAttribute="top" constant="56" id="eZA-bH-PQC"/>
                             <constraint firstItem="pkx-cS-nxk" firstAttribute="bottom" secondItem="REm-7X-mdn" secondAttribute="bottom" constant="157" id="ifs-NN-buw"/>
                             <constraint firstItem="EnE-fH-lyJ" firstAttribute="top" secondItem="pkx-cS-nxk" secondAttribute="top" constant="47" id="uFD-Ro-hoH"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="pkx-cS-nxk"/>
                     </view>
+                    <connections>
+                        <outlet property="webView" destination="AAI-wb-dKR" id="k8j-kX-ttq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pDV-qF-WyU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
