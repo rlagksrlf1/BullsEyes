@@ -20,7 +20,7 @@ class AboutViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        if let url = Bundle.main.url(forResource: "BullsEye",withExtension: "html") {
+        if let url = Bundle.main.url(forResource: "Bullseye",withExtension: "html") {
             let request = URLRequest(url: url)
             webView.load(request)
         }

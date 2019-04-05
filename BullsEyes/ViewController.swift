@@ -79,7 +79,7 @@ class ViewController: UIViewController {
         
         present(alert, animated: true, completion: nil)
         
-        startNewRound()
+        //startNewRound()
     }
     
     @IBAction func sliderMoved(_ slider: UISlider){
