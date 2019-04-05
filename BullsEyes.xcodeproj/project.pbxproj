@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D303BCFB22576C240078603B /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D303BCFA22576C240078603B /* AboutViewController.swift */; };
 		D383E2B322573815000CB3E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D383E2B222573815000CB3E8 /* AppDelegate.swift */; };
 		D383E2B522573815000CB3E8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D383E2B422573815000CB3E8 /* ViewController.swift */; };
 		D383E2B822573815000CB3E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D383E2B622573815000CB3E8 /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D303BCFA22576C240078603B /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		D383E2AF22573815000CB3E8 /* BullsEyes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BullsEyes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D383E2B222573815000CB3E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D383E2B422573815000CB3E8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 			children = (
 				D383E2B222573815000CB3E8 /* AppDelegate.swift */,
 				D383E2B422573815000CB3E8 /* ViewController.swift */,
+				D303BCFA22576C240078603B /* AboutViewController.swift */,
 				D383E2B622573815000CB3E8 /* Main.storyboard */,
 				D383E2B922573816000CB3E8 /* Assets.xcassets */,
 				D383E2BB22573816000CB3E8 /* LaunchScreen.storyboard */,
@@ -256,6 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D303BCFB22576C240078603B /* AboutViewController.swift in Sources */,
 				D383E2B522573815000CB3E8 /* ViewController.swift in Sources */,
 				D383E2B322573815000CB3E8 /* AppDelegate.swift in Sources */,
 			);
