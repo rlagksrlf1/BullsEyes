@@ -38,6 +38,7 @@
 /* Begin PBXFileReference section */
 		D303BCFA22576C240078603B /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		D303BCFC2257726C0078603B /* Bullseye.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = Bullseye.html; sourceTree = "<group>"; };
+		D303BCFE225773C20078603B /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		D383E2AF22573815000CB3E8 /* BullsEyes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BullsEyes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D383E2B222573815000CB3E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D383E2B422573815000CB3E8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -81,6 +82,7 @@
 		D383E2A622573815000CB3E8 = {
 			isa = PBXGroup;
 			children = (
+				D303BCFE225773C20078603B /* .gitignore */,
 				D383E2B122573815000CB3E8 /* BullsEyes */,
 				D383E2C622573816000CB3E8 /* BullsEyesTests */,
 				D383E2D122573816000CB3E8 /* BullsEyesUITests */,
