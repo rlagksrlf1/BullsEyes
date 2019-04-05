@@ -24,10 +24,16 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        startNewRound()
+        startNewGame()
     }
     
+    @IBAction func startNewGame(){
+        score = 0
+        round = 0
+        startNewRound()
+    }
     func startNewRound(){
+        round += 1
         targetValue = Int.random(in: 1...100)
         currentValue = 50
         slider.value = Float(currentValue)
@@ -42,16 +48,32 @@ class ViewController: UIViewController {
     
     @IBAction func showAlert(){
         let difference = abs(targetValue - currentValue)
-        let points = 100 - difference
+        
+        var points = 100 - difference
+        let title: String
+        if difference == 0 {
+            title = "Perfect!"
+            points += 100
+        } else if difference < 5 {
+            title = "You almost had it!"
+            if difference == 1 {
+                points += 50
+            }
+        } else if difference < 10 {
+            title = "Pretty good!"
+        } else {
+            title = "Not even close..."
+        }
+        
         score += points
         
         let message = "You scored \(points) points"
         
         /*let message = "The value of the slider is: \(currentValue)" + "\nThe target value is: \(targetValue)"*/
-        let alert = UIAlertController(title: "Hello, World", message: message,
+        let alert = UIAlertController(title: title, message: message,
                                       preferredStyle: .alert)
         
-        let action = UIAlertAction(title: "Awesome", style: .default, handler: nil)
+        let action = UIAlertAction(title: "O.K", style: .default, handler: { _ in self.startNewRound()})
         alert.addAction(action)
         
         present(alert, animated: true, completion: nil)
