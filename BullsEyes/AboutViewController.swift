@@ -3,7 +3,6 @@
 //  BullsEyes
 //
 //  Created by sgcs on 2019. 4. 5..
-//  Copyright © 2019년 KyungKoo Kang. All rights reserved.
 //
 
 import UIKit
