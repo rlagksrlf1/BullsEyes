@@ -70,7 +70,7 @@ class ViewController: UIViewController {
         
         let message = "You scored \(points) points"
         
-        /*let message = "The value of the slider is: \(currentValue)" + "\nThe target value is: \(targetValue)"*/
+        /*let message = "The value of the slider is: \(currentValue)" +  "\nThe target value is: \(targetValue)"*/
         let alert = UIAlertController(title: title, message: message,
                                       preferredStyle: .alert)
         
